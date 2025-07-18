@@ -36,17 +36,13 @@ A lightweight PHP proxy/forwarder for the Telegram Bot API that supports **all H
 Send Telegram Bot API requests to your forwarder, for example:
 
 ```
-
-[https://yourdomain.com/telegram-api-proxy.php/bot](https://yourdomain.com/telegram-api-proxy.php/bot)<token>/sendMessage?chat\_id=123\&text=hello
-
+https://yourdomain.com/telegram-api-proxy.php/bot<token>/sendMessage?chat_id=123&text=hello
 ```
 
 The forwarder will proxy this request to:
 
 ```
-
-[https://api.telegram.org/bot](https://api.telegram.org/bot)<token>/sendMessage?chat\_id=123\&text=hello
-
+https://api.telegram.org/bot)<token>/sendMessage?chat_id=123&text=hello
 ```
 
 Preserving all headers and request body transparently.
